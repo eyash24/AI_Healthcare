@@ -1,0 +1,31 @@
+
+# A — Potential to assist radiologists
+
+1. Triage & prioritization
+
+- Flag high-risk X-rays so urgent cases are read earlier (reduce time-to-diagnosis).
+- Useful in high workload settings or EDs where rapid triage matters.
+
+2. Second-reader / decision support
+
+- Provide a second opinion (probability + heatmap) to increase radiologist sensitivity for subtle pneumonia.
+- Helps less-experienced readers, e.g., in smaller hospitals or tele-radiology.
+
+3. Quantification & monitoring
+
+- Track lesion probability and heatmap changes across serial studies to help assess progression or response to treatment.
+
+4. Workflow automation
+
+- Auto-populate structured reporting fields (e.g., “probability of pneumonia: 0.87”) to reduce clerical load.
+
+5. Data capture for research
+
+- Automatically tag studies for cohort creation (for clinical studies or QA).
+
+Limitations & realistic expectations
+
+- Not a replacement for radiologist judgement — should be human-in-the-loop.
+- Performance may degrade on images from unseen hospitals, different X-ray machines, or different patient populations.
+- Susceptible to dataset bias (age, positioning, comorbidities, portable AP vs PA view).
+- Explainability (Grad-CAM) helps but is not a proof of correctness.
