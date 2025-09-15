@@ -1,5 +1,5 @@
 model/
-heart*
 Data/chest*
+Data/heart*
 *.h5
 */*.h5
