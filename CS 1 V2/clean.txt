@@ -1,122 +1,21 @@
-## Conclusion from Feature Importance
+The following models are being compared for the classification task:
+- Logistic Regression: A fundamental linear model that estimates the probability of a binary outcome using the logistic function. It serves as a strong baseline for classification problems due to its simplicity and interpretability.
 
-- Most Influential Factors:
+- Decision Tree Classifier: A non-linear model that splits the data based on feature conditions, forming a tree-like structure of decisions. It is highly interpretable but can easily overfit without pruning or depth control.
 
-  - Max heart rate achieved and chest pain type are the strongest predictors. This suggests that exercise capacity and symptoms during exertion are critical indicators of heart disease risk.
-  - Number of major vessels and ST depression also rank highly, highlighting the role of blood flow blockages and ECG abnormalities.
+- Random Forest Classifier: An ensemble of decision trees where each tree is trained on random subsets of data and features. It improves accuracy, generalization, and reduces overfitting compared to a single decision tree.
 
-- Moderately Important Factors:
+- Gradient Boosting Classifier: An ensemble technique that builds trees sequentially, where each tree learns from the errors of the previous one. It produces strong predictive performance and handles complex data patterns well.
 
-  - Age, Thallium heart scan results, cholesterol, and resting blood pressure contribute meaningfully, showing that traditional cardiovascular risk factors still hold weight.
+- AdaBoost Classifier: An adaptive boosting algorithm that combines multiple weak learners, giving higher weights to misclassified samples in each round. It is effective for improving performance on difficult-to-classify cases.
 
-- Less Influential Factors:
+- K-Nearest Neighbors (KNN): A distance-based model that assigns a class label based on the majority vote of its closest neighbors. Simple and effective, but sensitive to the choice of `k` and feature scaling.
 
-  - Sex, ST slope, exercise-induced angina, resting ECG, and fasting blood sugar have lower importance, suggesting they are less decisive in this dataset/model, though they still add some predictive value.
+- Support Vector Classifier (SVC): A model that finds the optimal hyperplane separating classes with maximum margin. With kernel functions, it can handle non-linear decision boundaries and is robust in high-dimensional spaces.
 
-## Potential Preventive Measures or Lifestyle Changes Based on Risk Factors
+- Naïve Bayes (GaussianNB & BernoulliNB): Probabilistic classifiers based on Bayes’ theorem. GaussianNB assumes continuous features follow a normal distribution, while BernoulliNB is suited for binary features. Both are fast and efficient.
 
-1. Chest Pain Type (Angina/Chest Discomfort)
+- Multi-Layer Perceptron (MLP): A type of neural network consisting of multiple fully connected layers. It captures complex non-linear relationships but requires more data and tuning compared to simpler models.
 
-   - Preventive Measures:
+Performance metrics evaluated: Accuracy, Precision, Recall, F1-score, ROC-AUC score, and Confusion Matrix.
 
-     - Early medical evaluation for recurring chest pain.
-     - Regular cardiovascular check-ups.
-     - Use of prescribed medications for hypertension, high cholesterol, or angina.
-   - Lifestyle Changes:
-
-     - Stress management (yoga, meditation, therapy).
-     - Avoiding smoking and excessive alcohol intake.
-     - Maintaining a heart-healthy diet (low sodium, high fiber, lean proteins).
-
-2. ST Slope (Abnormal ECG indicating ischemia)
-
-   - Preventive Measures:
-
-     - Regular monitoring of heart electrical activity.
-     - Timely interventions like exercise stress tests or echocardiography.
-   - Lifestyle Changes:
-
-     - Consistent moderate exercise tailored to tolerance.
-     - Limiting high-fat and processed foods.
-     - Compliance with medications (e.g., for blood pressure, cholesterol).
-
-3. Resting Electrocardiogram (Abnormal Resting ECG)
-
-   - Preventive Measures:
-
-     - Routine ECG check-ups, especially for high-risk individuals.
-     - Immediate evaluation of any abnormal heart rhythm or conduction issue.
-   - Lifestyle Changes:
-
-     - Reduce caffeine and stimulant intake.
-     - Ensure adequate sleep and recovery.
-     - Managing comorbidities (diabetes, hypertension).
-
-4. Fasting Blood Sugar (Diabetes or Prediabetes)
-
-   - Preventive Measures:
-
-     - Regular blood sugar screening.
-     - Early treatment of prediabetes with diet and exercise.
-   - Lifestyle Changes:
-
-     - Balanced diet (low in refined sugars, more whole grains).
-     - Weight management and regular physical activity.
-     - Consistent monitoring of blood glucose levels.
-
-5. Max Heart Rate Achieved (Low values may suggest poor exercise capacity)
-
-   - Preventive Measures:
-
-     - Gradual and supervised exercise programs to improve cardiovascular fitness.
-     - Stress tests to assess cardiac response.
-   - Lifestyle Changes:
-
-     - Engage in aerobic exercise (walking, swimming, cycling).
-     - Avoid overexertion; follow a structured fitness plan approved by a doctor.
-     - Regular monitoring during exercise.
-
-6. Age (Non-modifiable risk factor)
-
-   - Preventive Measures:
-
-     - More frequent screening as age increases.
-     - Use of preventive medications if risk is high.
-   - Lifestyle Changes:
-
-     - Maintain healthy habits throughout aging.
-     - Social engagement and mental health care (reduces stress-related cardiac risks).
-     - Prioritize preventive healthcare (vaccines, regular checkups).
-
-
-## Ethical Considerations in Using Predictive Models for Healthcare
-
-1. Fairness and Bias
-
-   - Models may reflect biases in training data (e.g., underrepresentation of certain age groups, genders, or ethnicities).
-   - Risk of unfair treatment or misdiagnosis if predictions are skewed.
-
-2. Transparency and Explainability
-
-   - Patients and doctors should understand -why- the model predicts high risk.
-   - Black-box predictions without explanation can reduce trust and hinder informed decisions.
-
-3. Privacy and Data Security
-
-   - Sensitive health data must be protected from misuse or breaches.
-   - Consent is crucial when collecting and using patient data.
-
-4. Over-Reliance on Models
-
-   - Models should support, not replace, clinical judgment.
-   - Ethical risk if doctors blindly follow predictions without considering patient context.
-
-5. Psychological Impact
-
-   - Labeling someone as “high risk” may cause unnecessary anxiety.
-   - Communication should be careful, with emphasis on preventive steps.
-
-6. Access and Equity
-
-   - Predictive healthcare tools should be accessible to all, not just those in well-funded healthcare systems.
-   - Risk of widening healthcare disparities if only some groups benefit.
