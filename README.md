@@ -2,13 +2,13 @@
 This repository contains a collection of Jupyter Notebooks demonstrating the application of machine learning techniques to various problems in healthcare. Each notebook addresses a specific case study, from disease prediction to anomaly detection.
 
 # Notebooks
-- genetic_risk_profiling.ipynb: This notebook explores the use of unsupervised learning, specifically clustering algorithms, to group patients based on their genetic data. The goal is to identify distinct genetic subgroups that may have a predisposition to certain health conditions.
+- CS 3/genetic_risk_profiling.ipynb: This notebook explores the use of unsupervised learning, specifically clustering algorithms, to group patients based on their genetic data. The goal is to identify distinct genetic subgroups that may have a predisposition to certain health conditions.
 
-- hospital_readmission.ipynb: This notebook focuses on predictive modeling to forecast patient outcomes. It includes tasks for classification (predicting the likelihood of hospital readmission) and regression (predicting the length of a hospital stay).
+- CS 4/hospital_readmission.ipynb: This notebook focuses on predictive modeling to forecast patient outcomes. It includes tasks for classification (predicting the likelihood of hospital readmission) and regression (predicting the length of a hospital stay).
 
-- heart_disease_prediction.ipynb: This project utilizes supervised machine learning models to predict the presence of heart disease based on patient health metrics. The notebook walks through data preprocessing, model training, and performance evaluation.
+- CS 1 V2/heart_disease_prediction.ipynb: This project utilizes supervised machine learning models to predict the presence of heart disease based on patient health metrics. The notebook walks through data preprocessing, model training, and performance evaluation.
 
-- chest-x-ray-pneumonia-cnn-transfer-learning.ipynb: This notebook demonstrates the use of deep learning and transfer learning for medical image analysis. The model is trained to classify chest X-ray images to detect the presence of pneumonia.
+- CS 2/chest-x-ray-pneumonia-cnn-transfer-learning.ipynb: This notebook demonstrates the use of deep learning and transfer learning for medical image analysis. The model is trained to classify chest X-ray images to detect the presence of pneumonia.
 
 # Setup and Running the Notebooks
 
