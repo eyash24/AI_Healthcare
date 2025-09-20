@@ -4,3 +4,4 @@ Data/heart*
 *.h5
 */*.h5
 Data/*.zip
+pdfs/
