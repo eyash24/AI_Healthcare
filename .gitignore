@@ -5,3 +5,5 @@ Data/heart*
 */*.h5
 Data/*.zip
 pdfs/
+html*/
+drafts/
